@@ -23,6 +23,7 @@ const Home = () => {
       <div>
         {movies.map((movie) => (
           <Movies
+            key={movie.id}
             id={movie.id}
             coverImg={movie.medium_cover_image}
             title={movie.title}
