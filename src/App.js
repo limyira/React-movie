@@ -7,10 +7,9 @@ function App() {
     <BrowserRouter>
       <Routes basename="/React-movie">
         <Route path="/movie/:id" element={<Detail />}></Route>
-        <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />}></Route>
+        <Route path={process.env.PUBLIC_URL} element={<Home />}></Route>
       </Routes>
     </BrowserRouter>
   );
 }
-
 export default App;
